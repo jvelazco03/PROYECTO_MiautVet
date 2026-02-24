@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pet_dark_bg">
+
+    <LinearLayout
+        android:id="@+id/logoArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_logo"
+            app:tint="@color/pet_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="MiauVet"
+            android:textColor="@color/pet_white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:text="Gestión Veterinaria Fiel"
+            android:textColor="@color/pet_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/pet_white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoArea">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Bienvenido de nuevo"
+                android:textColor="@color/pet_dark_bg"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MiauVet.TextInputLayout.Petazy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:hint="DNI (8 dígitos)"
+                app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="8" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnIngresar"
+                style="@style/Widget.MiauVet.Button.Peach"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="ENTRAR"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="¿Problemas para entrar? Contacta a soporte"
+                android:textColor="@color/pet_text_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

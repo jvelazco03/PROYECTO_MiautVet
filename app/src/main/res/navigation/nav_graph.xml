@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuPrincipalFragment">
+
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="com.miauvet.app.ui.MenuPrincipalFragment"
+        android:label="Menú Principal"
+        tools:layout="@layout/fragment_menu_principal">
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_clientesFragment"
+            app:destination="@id/clientesFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_pacientesFragment"
+            app:destination="@id/pacientesFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_veterinariosFragment"
+            app:destination="@id/veterinariosFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_consultasFragment"
+            app:destination="@id/consultasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/clientesFragment"
+        android:name="com.miauvet.app.ui.ClientesFragment"
+        android:label="Dueños"
+        tools:layout="@layout/fragment_clientes">
+        <action
+            android:id="@+id/action_clientesFragment_to_registrarClienteFragment"
+            app:destination="@id/registrarClienteFragment" />
+        <action
+            android:id="@+id/action_clientesFragment_to_editarClienteFragment"
+            app:destination="@id/editarClienteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrarClienteFragment"
+        android:name="com.miauvet.app.ui.RegistrarClienteFragment"
+        android:label="Registrar Dueño"
+        tools:layout="@layout/fragment_registrar_cliente" />
+
+    <fragment
+        android:id="@+id/editarClienteFragment"
+        android:name="com.miauvet.app.ui.EditarClienteFragment"
+        android:label="Editar Dueño"
+        tools:layout="@layout/fragment_editar_cliente">
+        <argument
+            android:name="id_cliente"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pacientesFragment"
+        android:name="com.miauvet.app.ui.PacientesFragment"
+        android:label="Pacientes"
+        tools:layout="@layout/fragment_pacientes">
+        <action
+            android:id="@+id/action_pacientesFragment_to_registrarPacienteFragment"
+            app:destination="@id/registrarPacienteFragment" />
+        <action
+            android:id="@+id/action_pacientesFragment_to_editarPacienteFragment"
+            app:destination="@id/editarPacienteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrarPacienteFragment"
+        android:name="com.miauvet.app.ui.RegistrarPacienteFragment"
+        android:label="Registrar Paciente"
+        tools:layout="@layout/fragment_registrar_paciente" />
+
+    <fragment
+        android:id="@+id/editarPacienteFragment"
+        android:name="com.miauvet.app.ui.EditarPacienteFragment"
+        android:label="Editar Paciente"
+        tools:layout="@layout/fragment_editar_paciente">
+        <argument
+            android:name="id_paciente"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/veterinariosFragment"
+        android:name="com.miauvet.app.ui.VeterinariosFragment"
+        android:label="Veterinarios"
+        tools:layout="@layout/fragment_veterinarios">
+        <action
+            android:id="@+id/action_veterinariosFragment_to_registrarVeterinarioFragment"
+            app:destination="@id/registrarVeterinarioFragment" />
+        <action
+            android:id="@+id/action_veterinariosFragment_to_editarVeterinarioFragment"
+            app:destination="@id/editarVeterinarioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrarVeterinarioFragment"
+        android:name="com.miauvet.app.ui.RegistrarVeterinarioFragment"
+        android:label="Registrar Veterinario"
+        tools:layout="@layout/fragment_registrar_veterinario" />
+
+    <fragment
+        android:id="@+id/editarVeterinarioFragment"
+        android:name="com.miauvet.app.ui.EditarVeterinarioFragment"
+        android:label="Editar Veterinario"
+        tools:layout="@layout/fragment_editar_veterinario">
+        <argument
+            android:name="id_veterinario"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/consultasFragment"
+        android:name="com.miauvet.app.ui.ConsultasFragment"
+        android:label="Consultas"
+        tools:layout="@layout/fragment_consultas">
+        <action
+            android:id="@+id/action_consultasFragment_to_registrarConsultaFragment"
+            app:destination="@id/registrarConsultaFragment" />
+        <action
+            android:id="@+id/action_consultasFragment_to_editarConsultaFragment"
+            app:destination="@id/editarConsultaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrarConsultaFragment"
+        android:name="com.miauvet.app.ui.RegistrarConsultaFragment"
+        android:label="Registrar Consulta"
+        tools:layout="@layout/fragment_registrar_consulta" />
+
+    <fragment
+        android:id="@+id/editarConsultaFragment"
+        android:name="com.miauvet.app.ui.EditarConsultaFragment"
+        android:label="Editar Consulta"
+        tools:layout="@layout/fragment_editar_consulta">
+        <argument
+            android:name="id_consulta"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

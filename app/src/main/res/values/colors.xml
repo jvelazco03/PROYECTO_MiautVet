@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pet_dark_bg">#122F38</color>
+    <color name="pet_peach">#F7B29D</color>
+    <color name="pet_white">#FFFFFF</color>
+    <color name="pet_field_bg">#F8F9FA</color>
+    <color name="pet_text_gray">#6C757D</color>
+    <color name="pet_icon_bg_peach">#FFE0D6</color>
+
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_mint">#B2DFDB</color>
+    <color name="primary_mint_dark">#80CBC4</color>
+
+    <color name="secondary_lavender">#E1BEE7</color>
+
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_500">#9E9E9E</color>
+
+    <color name="success">#81C784</color>
+    <color name="error">#E57373</color>
+
+    <color name="error_red">#E53935</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_green_dark">#388E3C</color>
+
+    <color name="background_app">#F8F9FA</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_light">#FFFFFF</color>
+
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_on_primary">#212121</color>
+
+    <color name="gradient_start">#B2DFDB</color>
+    <color name="gradient_end">#E1BEE7</color>
+</resources>

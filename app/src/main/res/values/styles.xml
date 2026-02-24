@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Widget.MiauVet.Button.Peach" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/pet_peach</item>
+        <item name="android:textColor">@color/pet_white</item>
+        <item name="cornerRadius">28dp</item> <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Widget.MiauVet.TextInputLayout.Petazy" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxStrokeColor">@color/pet_peach</item>
+        <item name="boxBackgroundColor">@color/pet_white</item>
+        <item name="hintTextColor">@color/pet_text_gray</item>
+    </style>
+
+
+
+
+
+    <style name="Base.Theme.PROYECTO" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primary_mint</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/secondary_lavender</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/background_app</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <item name="android:statusBarColor">@color/primary_mint</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:navigationBarColor">@color/background_app</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Theme.PROYECTO" parent="Base.Theme.PROYECTO" />
+
+
+    <style name="Widget.MiauVet.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/primary_mint</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Widget.MiauVet.Button.Gradient">
+        <item name="android:background">@drawable/button_gradient_bg</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="Widget.MiauVet.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/primary_mint_dark</item>
+        <item name="hintTextColor">@color/primary_mint_dark</item>
+    </style>
+
+    <style name="Widget.MiauVet.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/surface_card</item>
+    </style>
+    
+    <style name="Widget.MiauVet.Card.Glass">
+        <item name="android:background">@drawable/glass_background</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="TextAppearance.MiauVet.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.MiauVet.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>

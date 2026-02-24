@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estados_veterinario">
+        <item>Activo</item>
+        <item>En Vacaciones</item>
+        <item>Inactivo</item>
+    </string-array>
+</resources>
